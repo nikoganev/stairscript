@@ -17,7 +17,7 @@ app.use(
   })
 );
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({origin:true, credentials:true}));
 
 // DB Config
 const URI = require("./config/keys").mongoURI;
@@ -28,7 +28,7 @@ mongoose
     process.env.MONGODB_URI || URI,
     { useNewUrlParser: true,
       useUnifiedTopology: true,
-      
+
     }
   )
   .then(() => console.log("MongoDB successfully connected"))

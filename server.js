@@ -17,7 +17,7 @@ app.use(
   })
 );
 app.use(bodyParser.json());
-app.use(cors({origin:true, credentials:true}));
+app.use(cors());
 
 // DB Config
 const URI = require("./config/keys").mongoURI;

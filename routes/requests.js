@@ -1,5 +1,9 @@
 const router = require('express').Router();
 let Request = require('../models/request.model');
+const cors = require('cors');
+const express = require("express");
+const app = express();
+app.use(cors());
 
 router.route('/').get((req, res) => {
   Request.find()

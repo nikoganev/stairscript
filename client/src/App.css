@@ -1,0 +1,52 @@
+p.m-auto {
+  line-height:2.5;
+}
+.navbar-border-shadow{
+  box-shadow: 1px 0px 3px #202020;
+}
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0,0,0, 0.5);
+}
+.popup_inner {
+
+  text-align:left;
+
+  padding:3%;
+  background: white;
+}
+
+.popup_inner .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup_inner .close:hover {
+  color: orange;
+}
+
+.we-bg {
+  background:url("images/website_background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  margin-top:-60px;
+  background-size: 100% 100%;
+  height: 800px;
+}
+.bg-fade {
+  background-color:#000;
+  background-size: 100% 100%;
+  height: 800px;
+  opacity: 0.5;
+}
